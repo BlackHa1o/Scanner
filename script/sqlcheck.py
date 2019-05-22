@@ -1,7 +1,9 @@
 import re,random
 from lib.core import Download
 from lib.core import outputer
+from lib.core import resoponse
 output = outputer.outputer()
+
 class spider():
     def run(self,url,html):
         if(not url.find("?")):
@@ -34,5 +36,6 @@ class spider():
             content["false"] = Downloader.get(_url)
             if content["origin"]==content["true"]!=content["false"]:
                 print "sql fonud: %"%url
+                re.response()
                 output.add_list("sql_inject",url)
                 return True
