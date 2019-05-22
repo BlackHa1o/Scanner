@@ -4,6 +4,7 @@
 from lib.core import Download,common
 import sys,os
 from lib.core import outputer
+from lib.core import xss_response
 output = outputer.outputer()
 payload = []
 filename = os.path.join(sys.path[0],"data","xss.txt")
@@ -28,6 +29,7 @@ class spider():
                     return False
                 if(_str.find(_payload)!=-1):
                     print "xss found:%s"%url
+                    re.response()
                     output.add_list("xss",url)
         return False
 
