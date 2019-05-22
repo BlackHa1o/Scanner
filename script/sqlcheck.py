@@ -1,7 +1,7 @@
 import re,random
 from lib.core import Download
 from lib.core import outputer
-from lib.core import resoponse
+from lib.core import sql_resoponse
 output = outputer.outputer()
 
 class spider():
